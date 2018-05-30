@@ -41,7 +41,8 @@ class ViewController: UIViewController {
         let b = GMSCoordinateBounds(path: p)
         let update = GMSCameraUpdate.fit(b, withPadding: CGFloat.init())
         
-        mapView.moveCamera(update)
+        //mapView.moveCamera(update)
+        mapView.animate(with: update)
     }
 
 }
